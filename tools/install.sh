@@ -6,7 +6,7 @@ if [ -z "${BASH_VERSION-}" ]; then
   printf "Error: Bash 3.2 or higher is required for Oh My Bash.\n"
   printf "Error: Install Bash and try running this installation script with Bash.\n"
   if command -v bash >/dev/null 2>&1; then
-    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"\n'
+    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/aliasbo/oh-my-bash/master/tools/install.sh)"\n'
   fi
   return 1 >/dev/null 2>&1 || exit 1
 fi
@@ -23,7 +23,7 @@ fi
 _omb_install_print_version() {
   local OMB_VERSINFO
   OMB_VERSINFO=(1 0 0 0 master noarch)
-  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/ohmybash/oh-my-bash)'
+  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/aliasbo/oh-my-bash)'
   printf 'oh-my-bash, version %s.%s.%s(%s)-%s (%s)\n' "${OMB_VERSINFO[@]}"
 }
 
@@ -170,7 +170,7 @@ _omb_install_main() {
       return 1
     fi
   fi
-  _omb_install_run git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git "$OSH" || {
+  _omb_install_run git clone --depth=1 https://github.com/aliasbo/oh-my-bash.git "$OSH" || {
     printf "Error: git clone of oh-my-bash repo failed\n"
     return 1
   }
@@ -201,7 +201,7 @@ export OSH=$OSH
     '\____/_/ /_/  /_/ /_/ /_/\__, /  /_.___/\__,_/____/_/ /_/ ' \
     '                        /____/                            .... is now installed!' \
     "Please look over the ~/.bashrc file to select plugins, themes, and options"
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/aliasbo/oh-my-bash"
 
   if [[ :$install_opts: == *:dry-run:* ]]; then
     printf '%s\n' "$GREEN$BOLD[dryrun]$NORMAL Sample bashrc is created at '$BOLD$HOME/.bashrc-ombtemp$NORMAL'."
