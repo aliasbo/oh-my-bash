@@ -90,12 +90,12 @@ _omb_theme_PROMPT_COMMAND() {
 └─▪ "
         ;;
         *) PS1="${TITLEBAR}┌─$(my_ve)$(chroot)[$(clock_prompt)${_omb_prompt_normal}][$my_ps_user_host][$my_ps_path]$(modern_scm_prompt)$(__my_rvm_ruby_version)${_omb_prompt_normal}$(is_vim_shell)
-└─▪ "
+└─${_omb_prompt_olive}▪ ${_omb_prompt_normal}"
         ;;
     esac
 }
 
-PS2="└─▪ "
+PS2="└─${_omb_prompt_blue}▪ ${_omb_prompt_normal}"
 
 
 
