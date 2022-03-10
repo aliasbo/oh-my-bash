@@ -48,7 +48,7 @@ function _omb_upgrade {
   printf '%s\n' '\____/_/ /_/  /_/ /_/ /_/\__, /  /_.___/\__,_/____/_/ /_/ '
   printf '%s\n' '                        /____/                            '
   printf "${BLUE}%s\n" "Hooray! Oh My Bash has been updated and/or is at the current version."
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/aliasbo/oh-my-bash"
   if [[ $- == *i* ]]; then
     declare -f _omb_util_unload &>/dev/null && _omb_util_unload
     source ~/.bashrc

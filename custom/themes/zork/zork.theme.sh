@@ -86,10 +86,10 @@ _omb_theme_PROMPT_COMMAND() {
 
     # nice prompt
     case "`id -u`" in
-        0) PS1="${TITLEBAR}┌─$(my_ve)$(chroot)[$(clock_prompt)][$my_ps_user_host_root][$my_ps_path]$(modern_scm_prompt)$(__my_rvm_ruby_version)${_omb_prompt_normal}$(is_vim_shell)
+        0) PS1="${TITLEBAR}┌─$(my_ve)$(chroot)[$(clock_prompt)${_omb_prompt_normal}][$my_ps_user_host_root][$my_ps_path]$(modern_scm_prompt)$(__my_rvm_ruby_version)${_omb_prompt_normal}$(is_vim_shell)
 └─▪ "
         ;;
-        *) PS1="${TITLEBAR}┌─$(my_ve)$(chroot)[$(clock_prompt)][$my_ps_user_host][$my_ps_path]$(modern_scm_prompt)$(__my_rvm_ruby_version)${_omb_prompt_normal}$(is_vim_shell)
+        *) PS1="${TITLEBAR}┌─$(my_ve)$(chroot)[$(clock_prompt)${_omb_prompt_normal}][$my_ps_user_host][$my_ps_path]$(modern_scm_prompt)$(__my_rvm_ruby_version)${_omb_prompt_normal}$(is_vim_shell)
 └─▪ "
         ;;
     esac
