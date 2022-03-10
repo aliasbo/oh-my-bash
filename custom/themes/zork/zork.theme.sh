@@ -11,7 +11,7 @@ SCM_HG_CHAR="${_omb_prompt_bold_brown}☿${_omb_prompt_normal}"
 #CLOCK_THEME_PROMPT_PREFIX="${_omb_prompt_bold_teal}"
 #CLOCK_THEME_PROMPT_SUFFIX="${_omb_prompt_normal}"
 THEME_SHOW_CLOCK="true"
-THEME_CLOCK_COLOR="${_omb_prompt_bold_teal}"
+THEME_CLOCK_COLOR="${_omb_prompt_bold_navy}"
 THEME_CLOCK_FORMAT="%H:%M:%S"
 
 #Mysql Prompt
@@ -77,7 +77,7 @@ _omb_theme_PROMPT_COMMAND() {
     my_ps_user_host="${_omb_prompt_bold_gray}\u@\h${_omb_prompt_normal}";
     my_ps_user_host_root="${_omb_prompt_bold_red}\u@\h${_omb_prompt_normal}";
 
-    my_ps_path="${_omb_prompt_bold_navy}\w${_omb_prompt_normal}";
+    my_ps_path="${_omb_prompt_bold_teal}\w${_omb_prompt_normal}";
 
     if [ -n "$VIRTUAL_ENV" ]
     then
