@@ -19,7 +19,7 @@ export MYSQL_PS1="(\u@\h) [\d]> "
 
 case $TERM in
         xterm*)
-        TITLEBAR="\[\033]0;\w\007\]"
+        TITLEBAR="\[\033]0;\h:\w\007\]"
         ;;
         *)
         TITLEBAR=""
